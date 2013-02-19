@@ -126,7 +126,7 @@ public class DrinkChooser extends DialogFragment {
         		now.setToNow();
         		repo.consumeDrink(new Drink(Drink.DrinkType.beer, 0.044, 12, now.toMillis(true)));
             	
-				Tracker.updateUI(new Intent(getActivity(), BroadcastService.class));
+				TrackerFragment.updateUI(new Intent(getActivity(), BroadcastService.class));
             }
         }).setNeutralButton("Back", new DialogInterface.OnClickListener() {
 			
